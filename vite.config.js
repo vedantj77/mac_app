@@ -5,5 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base:'/mac_app/'
+  // Remove or comment out the base line:
+  // base: '/mac_app/'
 })

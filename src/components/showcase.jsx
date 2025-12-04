@@ -1,6 +1,6 @@
-import {useMediaQuery} from "react-responsive";
-import {useGSAP} from "@gsap/react";
+import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
+import { useMediaQuery } from "react-responsive";
 
 const Showcase = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)'});
