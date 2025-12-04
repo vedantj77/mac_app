@@ -5,6 +5,11 @@ import ProductViewer from './components/ProductViewer'
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/all";
 import MacbookModel14 from './components/models/Macbook-14';
+import Showcase from './components/Showcase';
+import Performance from './components/Performance';
+import Footer from './components/Footer';
+import Features from './components/Features';
+import Highlights from './components/Highlights';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -14,6 +19,11 @@ const App = () => {
         <NavBar/>
         <Hero />
         <ProductViewer />
+        <Showcase/>
+        <Performance/>
+        <Features/>
+        <Highlights/>
+        <Footer/>
 
     </main>
   )
