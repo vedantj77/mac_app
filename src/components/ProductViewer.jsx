@@ -17,12 +17,18 @@ const ProductViewer = () => {
         { name: 'Pacific Blue', value: '#007aff' }, // Brighter blue at 2nd last
         { name: 'Space Gray', value: '#2e2c2e' } // Space Gray at last
     ];
+    
+    const currentColor = colors.find(c => c.value === color)?.name || colors[0].name;
+    const currentSize = scale === 0.06 ? '14"' : '16"';
 
     return (
         <section id="product-viewer">
             <h2>Take a closer look.</h2>
 
             <div className="controls">
+                <p className="info text-xl font-medium">
+                    Macbook Pro {currentSize} in <span style={{ color: color, fontWeight: 'bold' }}>{currentColor}</span>
+                </p>
                 <div className="flex-center gap-5 mt-5">
                     <div className="color-control">
                         {colors.map((colorOption) => (
